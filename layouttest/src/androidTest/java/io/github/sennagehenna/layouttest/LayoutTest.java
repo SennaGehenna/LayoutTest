@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
 @RunWith(AndroidJUnit4.class)
 public class LayoutTest {
 
-    static Long inflateAndMeasure(int layoutRes) {
+    public static Long inflateAndMeasure(int layoutRes) {
         LayoutInflater inflater = LayoutInflater.from(InstrumentationRegistry.getInstrumentation().getTargetContext());
         long startTime = System.nanoTime();
         for (int i = 0; i < 999; i++) {
